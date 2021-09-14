@@ -3,9 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   background-color:#f6f8f9;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
   /* Header */
+
+  header{
+    margin-bottom: 30px;
+  }
 
 header .banner{
   width: 100%;
@@ -29,12 +34,131 @@ h1{
 
 }
 
-     /* Main */
-
-main .conteiner{
-  margin: 30px 20% 10px 20%;
+.section{
   padding: 10px 50px;
+  margin: 2px 200px 0px 200px;
   background-color: white;
 }
 
+     /* Main */
 
+main .conteiner{
+  color: #444851;
+  margin-bottom: 1000px;
+}
+
+      /* Buttons */
+
+.top-button:enabled{
+  width: auto;
+  font-size: 70%;
+  background: #47ADF1;
+  color: white;
+  border-radius: 8px;
+  border: 0px;
+  padding: 10px 10px;
+}
+
+.top-button:disabled{
+  width: auto;
+  font-size: 70%;
+  background: lightgrey;
+  color: grey;
+  border-radius: 8px;
+  border: 0px;
+  padding: 10px 10px;
+  opacity: 0.4;
+}
+
+    /* List */
+
+.list{
+  padding: 10px 0px;
+  margin: 5px 0px 0px 0px;
+  background-color: white;
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+}
+
+.list h2{
+  font-weight: bold;
+  margin: 0px;
+}
+
+.list h2:before{
+  content: '\25BE';
+}
+
+.inside-list li{
+  padding: 10px;
+}
+
+.inside-list p .check:before{
+  content: ' \2714 ';
+}
+
+.inside-list p .check{
+  color: green;
+  border: solid green 1px;
+  border-radius: 50%;
+  padding: 1px 5px;
+  margin-right: 10px;
+}
+
+.inside-list p .not{
+  padding: 3px;
+}
+
+.inside-list p .not:before{
+  content: ' \2715 ';
+}
+
+.inside-list p .not{
+  color: red;
+  border: solid red 1px;
+  border-radius: 50%;
+  padding: 1px 5px;
+  margin-right: 10px;
+}
+
+main .marker{
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 65%;
+}
+
+.marker.editorial{
+  background-color: #47ADF1;
+  color: white;
+}
+
+.marker.goals{
+  background-color: #9C72E4;
+  color: white;
+}
+
+.marker.recruit{
+  background-color: #64C0A9;
+  color: white;
+}
+
+.marker.mobile{
+  background-color: #F29E33;
+  color: white;
+}
+
+.marker.web{
+  background-color: #D863A1;
+  color: white;
+}
+
+.marker.sales{
+  background-color: #B0C926;
+  color: white;
+}
+p{
+  display: inline-block;
+}
