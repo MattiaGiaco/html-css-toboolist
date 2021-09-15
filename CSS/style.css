@@ -2,80 +2,110 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+ background-color:#F6F8F9;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  height: 70px;
+  background-color: #FFF;
+  padding: 10px 20px;
+}
+
+   /* utils */
+
+.btn{
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-fill{
+  background-color: #47ADF1;
+  color: white;
+  border: 1px solid #47ADF1;
+}
+
+.btn-empty{
+  background-color: #fff;
+  color: grey;
+  border: 1px solid #000;
+}
+  
+.marker{
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 65%;
+  color: #fff;
+}
+
+.marker.editorial{
+  background-color: #47ADF1;
+}
+
+.marker.goals{
+  background-color: #9C72E4;
+}
+
+.marker.recruit{
+  background-color: #64C0A9;
+}
+
+.marker.mobile{
+  background-color: #F29E33;
+}
+
+.marker.web{
+  background-color: #D863A1;
+}
+
+.marker.sales{
+  background-color: #B0C926;
 }
 
   /* Header */
 
-header .banner{
-  height: 100px;
-  line-height: 100px;
-  padding-left: 20px;
-  background-color: white;
+  #logo{
+    vertical-align: middle;
 }
 
-header .logo{
-  width: 70px;
+#logo-text{
+  font-weight: 800;
+  font-size: 30px;
   vertical-align: middle;
-  background-color: white;
-}
-
-h1{
-  font-size: 40px;
-  display: inline-block;
-  background-color: white;
-  vertical-align: middle;
-
-}
-
-.section{
-  padding: 10px 50px;
-  margin: 2px 200px 0px 200px;
-  background-color: white;
 }
 
      /* Main */
 
-main .conteiner{
-  background-color: #F6F8F9;
-  color: #444851;
-  margin-bottom: 20px;
+.container{
+  width: 70%;
+  background-color: #fff;
+  margin: 50px auto;
+  border-radius: 5px;
 }
 
-      /* Buttons */
-
-.top-button:enabled{
-  width: auto;
-  font-size: 70%;
-  background: #47ADF1;
-  color: white;
-  border-radius: 8px;
-  border: 0px;
-  padding: 10px 10px;
+.container .top{
+  padding: 15px 40px;
+  border-bottom: 1px solid #F6F8F9;
 }
 
-.top-button:disabled{
-  width: auto;
-  font-size: 70%;
-  background: lightgrey;
-  color: grey;
-  border-radius: 8px;
-  border: 0px;
-  padding: 10px 10px;
-  opacity: 0.4;
+.container .bottom{
+  padding: 40px;
 }
+
+
 
     /* List */
 
-.list{
+.bottom li{
   padding: 10px 0px;
-  margin: 5px 0px 0px 0px;
+  margin: 5px 0px;
   background-color: white;
-}
-
-ul{
   list-style: none;
-  padding: 0px;
 }
 
 .list h2{
@@ -87,15 +117,12 @@ ul{
   content: '\25BE';
 }
 
-.inside-list li{
-  padding: 10px;
-}
 
-.inside-list p .check:before{
+.inside-list .check:before{
   content: ' \2714 ';
 }
 
-.inside-list p .check{
+.inside-list .check{
   color: green;
   border: solid green 1px;
   border-radius: 50%;
@@ -103,57 +130,16 @@ ul{
   margin-right: 10px;
 }
 
-.inside-list p .not{
-  padding: 3px;
-}
 
-.inside-list p .not:before{
+.inside-list .deleted:before{
   content: ' \2715 ';
 }
 
-.inside-list p .not{
+.inside-list .deleted{
   color: red;
   border: solid red 1px;
   border-radius: 50%;
-  padding: 1px 5px;
+  padding: 2px 5px;
   margin-right: 10px;
 }
 
-main .marker{
-  border-radius: 20px;
-  padding: 8px 15px;
-  font-size: 65%;
-}
-
-.marker.editorial{
-  background-color: #47ADF1;
-  color: white;
-}
-
-.marker.goals{
-  background-color: #9C72E4;
-  color: white;
-}
-
-.marker.recruit{
-  background-color: #64C0A9;
-  color: white;
-}
-
-.marker.mobile{
-  background-color: #F29E33;
-  color: white;
-}
-
-.marker.web{
-  background-color: #D863A1;
-  color: white;
-}
-
-.marker.sales{
-  background-color: #B0C926;
-  color: white;
-}
-p{
-  display: inline-block;
-}
